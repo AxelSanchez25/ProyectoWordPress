@@ -19,6 +19,7 @@ Text Domain: nombre-del-tema
 body{
     background-color: rgba(0, 0, 0, 0.849);
     color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav{
@@ -37,6 +38,7 @@ body{
 
 .nav a{
     text-decoration: none;
+    text-align: center;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
@@ -51,13 +53,31 @@ body{
   align-items: center; 
   justify-content: center;
   position: relative;
+  background-color: azure;
+  height: 50vh;
+  overflow: hidden;
 }
 .Titulo_portada{
     position: absolute;
     z-index: 1000;
 }
 .portada img{
-    height: 100vh;
-    width: auto;
+    height: 100%;
+    width: 100%;
     filter: brightness(60%);
+   object-fit: cover;
+}
+
+.botones{
+    position: absolute;
+    z-index: 11000;
+    top: 20em;
+}
+.botones a{
+    text-decoration: none;
+    border: 2px solid greenyellow;
+    border-radius: 3px;
+    padding: 10px;
+    text-transform: capitalize;
+    color: greenyellow;
 }
